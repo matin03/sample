@@ -10,6 +10,8 @@ MATIN SAMPLE WEB APPLICATION 변경 내역
 
 > 프로젝트 신규 생성
 
+> 기본 pom 설정
+
 > H2 datavbase 및 jpa 설정
 
 >> H2 DB console 주소 : <http://localhost:8080/console>
