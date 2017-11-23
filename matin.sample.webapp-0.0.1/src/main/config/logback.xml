@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="30 seconds">
+
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- Log message format -->
+		<encoder>
+			<pattern>
+				%d{HH:mm:ss.SSS} [%thread] %-5level (%file:%line\)
+				%logger{32}.%method -%n \t%msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 하이버네이트 로그를 막기 위해선 아래 항목 주석 처리 -->
+	<logger name="org.hibernate.engine.internal.Collections" level="INFO" />
+	<logger name="org.hibernate.SQL" level="DEBUG" />
+	<logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE" />
+
+	<logger name="org.springframework" level="INFO" />
+	<logger name="org.hibernate" level="INFO" />
+	<logger name="org.mongodb.driver" level="ERROR" />
+	<logger name="com.saltlux.adam.tool" level="DEBUG" />
+
+	<root level="debug">
+		<appender-ref ref="console" />
+	</root>
+
+</configuration>

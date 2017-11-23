@@ -1,0 +1,39 @@
+
+server:
+ port: 80
+ contextPath: /
+
+spring:
+ http:
+  multipart:
+   max-file-size: -1
+   max-request-size: -1
+   
+ # db source 
+ datasource:
+  driver-class-name: org.h2.Driver
+  url: jdbc:h2:~/apps/h2db/sample;AUTO_SERVER=TRUE
+  username: sa
+  password: sa
+  maxActive: 20
+  
+ # jpa setting
+ jpa:
+  dialect: org.hibernate.dialect.SQLServerDialect
+  database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  show-sql: false
+  format_sql: false
+  hibernate:
+   # ddl-auto: create-drop
+   # ddl-auto: create
+   ddl-auto: update
+   # ddl-auto: validate
+
+---
+
+spring:
+ profiles: debug
+
+server:
+ port: 8080
+ contextPath: /
