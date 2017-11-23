@@ -13,14 +13,19 @@ import matin.sample.webapp.index.dto.SystemInfomation;
 @RestController
 public class IndexRestController {
 
+	/**
+	 * 시스템 정보 조회
+	 *
+	 * @return 시스템 정보
+	 */
 	@RequestMapping(value = "/getSystemInfo")
 	public SystemInfomation getSystemInfo() {
-		return  new SystemInfomation();
+		return new SystemInfomation();
 	}
-
 
 	/**
 	 * 버젼 정보를 가져온다
+	 *
 	 * @return 시스템의 버젼 정보
 	 */
 	@RequestMapping(value = "/getVersion")
@@ -30,12 +35,12 @@ public class IndexRestController {
 
 	/**
 	 * 시스템 이름을 가져온다
+	 *
 	 * @return 시스템의 이름
 	 */
 	@RequestMapping(value = "/getName")
 	public String getName() {
 		return "The matin Sample Web Application";
 	}
-
 
 }

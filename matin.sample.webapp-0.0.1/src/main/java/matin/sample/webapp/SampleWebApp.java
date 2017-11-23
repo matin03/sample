@@ -35,6 +35,11 @@ public class SampleWebApp extends SpringBootServletInitializer {
 		return application.sources(SampleWebApp.class);
 	}
 
+	/**
+	 * H2 Database console 설정
+	 *
+	 * @return h2 database console
+	 */
 	@Bean
 	public ServletRegistrationBean h2servletRegistration() {
 		ServletRegistrationBean registrationBean = new ServletRegistrationBean(new WebServlet());
