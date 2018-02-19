@@ -1,0 +1,24 @@
+[범례]
+-- 이슈 명명 규칙 --
+	NEW_yyyyMMdd: NEW - Job  			- 새로 진행할 작업 일자 
+	PBM_yyyyMMdd: PBM - Problem  		- 문제 발견 일자 
+	REF_yyyyMMdd: REF - Refactoring		- 소스 개선 사항
+	ISS_yyyyMMdd: ISS - Issue			- 이슈사항
+
+[메모]
+
+
+[진행 해야되는 것]
+
+ISS_2018.02.14 : thymeleaf 셋팅이 잘 안됨
+	- 참고 예제 : 
+	https://www.mkyong.com/spring-boot/spring-boot-hello-world-example-thymeleaf/
+	>>> thymeleaf version 을 올리고, 
+
+[체크 되어야 하는 것]
+
+
+[중복된것]
+
+
+[안하기로 한 것]
