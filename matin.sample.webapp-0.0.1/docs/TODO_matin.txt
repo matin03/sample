@@ -10,15 +10,20 @@
 
 [진행 해야되는 것]
 
-ISS_2018.02.14 : thymeleaf 셋팅이 잘 안됨
-	- 참고 예제 : 
-	https://www.mkyong.com/spring-boot/spring-boot-hello-world-example-thymeleaf/
-	>>> thymeleaf version 을 올리고, 
 
 [체크 되어야 하는 것]
 
 
+[진행된것]
+ISS_2018.02.14 : thymeleaf 셋팅이 잘 안됨
+	- 참고 예제 : 
+	https://www.mkyong.com/spring-boot/spring-boot-hello-world-example-thymeleaf/
+	>>> thymeleaf version 을 올리고, maven repository 정리 하니 정상 작동...
+
+
+
 [중복된것]
+
 
 
 [안하기로 한 것]
