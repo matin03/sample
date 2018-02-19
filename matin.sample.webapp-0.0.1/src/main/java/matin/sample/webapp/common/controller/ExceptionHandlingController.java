@@ -33,7 +33,6 @@ public class ExceptionHandlingController {
 	public ModelAndView handleError(final HttpServletRequest request, final Exception exception) {
 
 		ModelAndView mnv = new ModelAndView("/error/error");
-		// TODO : log 및 page 로 나누어서 처리 하기
 
 		StringBuilder err = new StringBuilder();
 		String errorUrl = request.getRequestURL().toString();
@@ -44,7 +43,6 @@ public class ExceptionHandlingController {
 		err.append("==============================================================\n");
 		logger.error("Application 오류 발생\n {}", err);
 
-		// TODO : error 화면 처리 하기
 		mnv.addObject("exception", exception.getMessage());
 		mnv.addObject("exceptionDetail", ExceptionUtils.getStackTrace(exception));
 		mnv.addObject("url", errorUrl);

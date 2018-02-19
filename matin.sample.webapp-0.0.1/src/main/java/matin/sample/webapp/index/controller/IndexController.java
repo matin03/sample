@@ -20,7 +20,9 @@ public class IndexController {
 	@ResponseBody
 	@RequestMapping(value = "")
 	public String index() {
-		return "Hello! matin sample web application";
+
+		System.out.println("????????????????");
+		return "Hello";
 	}
 
 }

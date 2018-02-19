@@ -11,6 +11,7 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -28,6 +29,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @EnableAutoConfiguration
 @SpringBootApplication
 @ConfigurationProperties(value = "classpath:sample.webapp.yml")
+@ImportResource(locations = {"classpath:spring/root-context.xml"})
 public class SampleWebApp extends SpringBootServletInitializer {
 
 	@Override
@@ -46,6 +48,7 @@ public class SampleWebApp extends SpringBootServletInitializer {
 		registrationBean.addUrlMappings("/console/*");
 		return registrationBean;
 	}
+
 
 	/**
 	 *

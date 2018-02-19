@@ -17,10 +17,13 @@
 	<logger name="org.hibernate.SQL" level="DEBUG" />
 	<logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE" />
 
-	<logger name="org.springframework" level="INFO" />
+	<logger name="org.springframework" level="DEBUG" />
 	<logger name="org.hibernate" level="INFO" />
 	<logger name="org.mongodb.driver" level="ERROR" />
-	<logger name="com.saltlux.adam.tool" level="DEBUG" />
+	
+	<logger name="org.thymeleaf" level="DEBUG" />
+	
+	<logger name="matin.sample" level="DEBUG" />
 
 	<root level="debug">
 		<appender-ref ref="console" />
